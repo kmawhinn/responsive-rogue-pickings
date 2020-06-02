@@ -18,6 +18,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	width: 90%;
 }
 
 h1,
@@ -61,7 +62,7 @@ header h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	border-bottom: 3px solid #77a466;
 }
@@ -82,6 +83,7 @@ header nav ul {
 	width: 100%;
 	flex-flow: column wrap;
 	list-style-type: none;
+	text-align: center;
 }
 header nav ul li {
 	text-transform: uppercase;
@@ -112,7 +114,7 @@ header nav ul li a{
 	align-items: center;
 }
 .main-image img {
-	width: 90%;
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
 }
@@ -123,7 +125,7 @@ header nav ul li a{
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	width: 90%;
+	width: 100%%;
 }
 .main-title h3 {
 	color: #77a466;
@@ -140,29 +142,8 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 90%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-
-}
-
-.section-one {
-	border-top: 1px solid #eee;
-}
-.section-two{
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-}
-.section-one h4,
-.section-two h4,
-.section-three h4 {
 	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	border-top: 1px solid #eee;
 }
 
 
@@ -210,4 +191,49 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/* Tablet size */
+
+@media screen and (min-width:768px){
+	body{
+		font-size: 1.2em;
+	}
+	.bottom-section{
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 1em;
+	}
+	.bottom-section h4{
+		width: 90%;
+		justify-content: center;
+	}
+	
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 30%;
+		display: flex;
+		justify-content: center;
+		height: auto;
+		flex-flow: row wrap;
+	}
+	
+	.section-two{
+		border-left: solid 1px #eee;
+		border-right: solid 1px #eee;
+	}
+}
+
+/* Desktop size */
+
+@media screen and (min-width:1200px){
+
+header nav ul{
+	flex-flow: row nowrap;
+}
+
 }
