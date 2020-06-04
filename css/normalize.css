@@ -422,3 +422,10 @@ td,
 th {
   padding: 0;
 }
+
+/* Trying to override user agent stylesheet, which is adding 40px left side margin to my column nav */
+
+ul, li {
+  margin:0;
+  padding:0;
+  }
